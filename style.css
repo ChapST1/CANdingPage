@@ -17,15 +17,18 @@ body{
     height: 100vh;
     overflow: hidden;
     animation: finBienvenida 10s 5s forwards;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     /* ocultar */
-    display: none;
+
   z-index: 4000;
     
 }
-.seccionBienvenida__img{
+.seccionBienvenida__imgTablet{
+    display: none;
+}
+.seccionBienvenida__img,.seccionBienvenida__imgTablet{
     width: 100%;
     object-fit: cover;
     animation: bienvenida 2s 1s linear forwards;
@@ -66,18 +69,22 @@ body{
 }
 .header__title{
     color: #fff;
+    font-size: 30px;
 }
 #btn{
     display: none;
 }
 .fa-paw{
     color: #fff;
-    font-size: 25px;
+    font-size: 30px;
     cursor: pointer;
+    transition: .5s;
+    
 }
+
 .activeFaPaw{
     transform: rotate3d(0, 1, 0, 3.0rad);
-    transition: .5s;
+    color: rgb(15, 119, 119);
 }
 .nav{
     position: absolute;
@@ -110,6 +117,7 @@ body{
 .nav__a{
     color: #fff;
     text-decoration: none;
+    font-size: 20px;
 
 }
 #btn:checked  ~ .nav{
@@ -265,27 +273,31 @@ body{
     font-size: 25px;
 }
 .fa-users,.fa-home{
-    width: 100%;
+    
     color: teal;
-    font-size: 40px;
-    display: block;
+    font-size: 35px;
     text-align: center;
+    width: 100%;
+    display: block;
+    margin: 5px 0;
 }
-.fa-home{
+/* .fa-home{
     margin: 0px 0 15px;
-}
+} */
 .nosotros__text,.nosotrosUbicacion__text{
     width: 95%;
-    margin: 15px 0;
+    margin: 15px auto;
     text-align: center;
     color: rgba(172, 169, 169, 0.979);
     font-size: 18px;
 }
 .nosotros__img,.nosotros__hogar__img{
     width: 95%;
+    height: 200px;
     display: block;
     margin: 0 auto;
     border-radius: 10px;
+    object-fit: contain;
 }
 
 
@@ -314,6 +326,74 @@ body{
 .fa-youtube:hover{
     color: red;
 }
+
+
+/* Media queryS? */
+@media (min-width: 600px) {
+  
+    .seccionBienvenida__img{
+        display: none;
+        opacity: 0;
+    }
+    .seccionBienvenida__imgTablet{
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
+    .slider{
+        height: 270px;
+    }
+    .slider__balls{
+        bottom: 10px;
+        gap: 8px;
+    }
+    .balls{
+        width: 25px;
+        height: 25px;
+    }
+
+    .familia__contenedor{
+        height: 200px;
+    }
+    .fa-paw--change{
+        font-size: 35px;
+    }
+    .nosotros__img,.nosotros__hogar__img{
+        height: 300px;
+        object-fit: contain;
+        ;
+    }
+}
+
+@media (min-width: 1024px) {
+
+.seccionBIenvenida__imgDos{
+    width: 50%;
+}
+.seccionBienvenida{
+    display: none;
+}
+
+.slider{
+    height: 400px;
+}
+}
+.familia__contenedor{
+    
+    height: 250px;
+}
+.familia__pets{
+    width: 32%;
+    height: 95%;
+}
+
+.fa-paw--change{
+    font-size: 70px;
+}
+
+
+
 
 
 
