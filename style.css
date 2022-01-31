@@ -85,7 +85,7 @@ body{
     top: 80px;
     width: 100%;
     height: calc(100vh - 80px);
-    background-color: rgba(0,0,0,0.68);
+    background-color: rgba(0,0,0,0.78);
     opacity: 0;
     transition: .5s ease-in;
     visibility: hidden;
@@ -195,18 +195,19 @@ body{
 
 .familia__contenedor{
     width: 95%;
-    height: 170px;
+    height: 160px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    
 }
 .familia__pets{
-    width: 30%;
-    height: 85%;
+    width: 32%;
+    height: 98%;
     display: flex;
     align-items: center;
-    background-color: rgb(15, 119, 119);
+    border:  .5px solid rgb(15, 119, 119);
     justify-content: center;
     position: relative;
     border-radius: 2px;
@@ -228,8 +229,8 @@ body{
     opacity: 1;
 }
 .familia__img{
-    width: 95%;
-    height: 95%;
+    width: 100%;
+    height: 100%;
     display: block;
     object-fit: cover;
     transition: .5s;
@@ -256,29 +257,36 @@ body{
 
 .seccionNosotros{
     width: 100%;
-    height: 100vh;
-    
 }
-.nosotros__title{
+.nosotros__title,.nosotros__ubicacion{
     color: #fff;
     margin: 15px;
     text-align: center;
     font-size: 25px;
 }
-.fa-users{
+.fa-users,.fa-home{
     width: 100%;
     color: teal;
     font-size: 40px;
     display: block;
     text-align: center;
 }
-.nosotros__text{
+.fa-home{
+    margin: 0px 0 15px;
+}
+.nosotros__text,.nosotrosUbicacion__text{
     width: 95%;
     margin: 15px 0;
     text-align: center;
+    color: rgba(172, 169, 169, 0.979);
+    font-size: 18px;
 }
-
-
+.nosotros__img,.nosotros__hogar__img{
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
 
 
 
