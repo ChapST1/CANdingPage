@@ -358,9 +358,7 @@ body {
 
 @media (min-width: 1020px) {
     
-    .seccionBienvenida{
-        display: none;
-    }
+    .
   .seccionBIenvenida__imgDos {
     width: 50%;
   }
@@ -370,7 +368,7 @@ body {
 
   .fa-paw{
       display: none;
-    
+      visibility: hidden;
   }
   .fa-paw--change{
       display: block;
