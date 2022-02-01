@@ -366,9 +366,6 @@ body {
   .seccionBIenvenida__imgDos {
     width: 50%;
   }
-  .seccionBienvenida {
-    display: none;
-  }
 
   .fa-paw{
       display: none;
