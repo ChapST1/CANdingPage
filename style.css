@@ -424,6 +424,7 @@ body {
 
   .fa-paw--change {
     font-size: 70px;
+    visibility: visible;
   }
 }
 
