@@ -362,7 +362,9 @@ body {
 
 @media (min-width: 1020px) {
     
-    .
+    .seccionBienvenida{
+      z-index: 500000000;
+  }
   .seccionBIenvenida__imgDos {
     width: 50%;
   }
